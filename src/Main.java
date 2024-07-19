@@ -41,6 +41,9 @@ public class Main {
         System.out.println("Conteúdos Inscritos" + devSara.getConteudosInscritos());
         System.out.println("Conteúdos Concluídos" + devSara.getConteudosConcluidos());
         System.out.println("XP:" + devSara.calcularTotalXp());
+        System.out.println("Sara finalizou os cursos: " + devSara.getConteudosConcluidos());
+
+        System.out.println("---------");
 
 
         Dev devVinicius = new Dev();
@@ -53,6 +56,29 @@ public class Main {
         System.out.println("Conteúdos Inscritos" + devSara.getConteudosInscritos());
         System.out.println("Conteúdos Concluídos" + devVinicius.getConteudosConcluidos());
         System.out.println("XP:" + devVinicius.calcularTotalXp());
+        System.out.println("Vinicius finalizou os cursos: " + devVinicius.getConteudosConcluidos());
+
+        System.out.println("-----------");
+
+        Dev devCamila = new Dev();
+        devCamila.setNome("Camila");
+        devCamila.inscreverBootcamp(bootcamp);
+        System.out.println("Conteúdos Incritos" + devCamila.getConteudosInscritos());
+        devCamila.progredir();
+        System.out.println("Conteúdos Inscritos" + devSara.getConteudosInscritos());
+        System.out.println("Conteúdos Concluídos" + devCamila.getConteudosConcluidos());
+        System.out.println("XP:" + devCamila.calcularTotalXp());
+        System.out.println("Camila finalizou os cursos: " + devCamila.getConteudosConcluidos());
+
+        System.out.println("---------");
+
+        Dev devMaria = new Dev();
+        devMaria.setNome("Maria");
+        devMaria.inscreverBootcamp(bootcamp);
+        System.out.println("Conteúdos Inscritos" + devMaria.getConteudosInscritos());
+        System.out.println("XP:" + devMaria.calcularTotalXp());
+        System.out.println("Maria finalizou os cursos:" + devMaria.getConteudosConcluidos());
+
 
     }
 }
